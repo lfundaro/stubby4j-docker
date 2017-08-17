@@ -2,7 +2,7 @@ FROM openjdk:8-jre-slim
 
 ARG STUBBY_VER
 ENV STUBBY_VER ${STUBBY_VER:-5.0.1}
-ENV EXTRA ""
+ENV STUBBY_EXTRA ""
 
 RUN apt-get update && \
     apt-get install -y wget && \
